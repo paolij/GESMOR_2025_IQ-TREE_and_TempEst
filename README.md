@@ -1,3 +1,2 @@
-# GESMOR-2025-IQ-TREE-TempEst-
-GESMOR 2025 IQ-TREE &amp; TempEst 
-# GESMOR-2025-IQ-TREE-TempEst-
+# GESMOR 2025 IQ-TREE and TempEst
+
