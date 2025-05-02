@@ -2,9 +2,11 @@
 # IQ-TREE and TempEST Tutorial
 # Julia Paoli
 
-## Background
+## IQ-TREE Background
 
 We will use the free and open-source software IQ-TREE to reconstruct maximum likelihood phylogenies. IQ-TREE is a fast and and efficent tool to construct phylogenetic trees. We will discuss features of IQ-TREE version 2 below. 
+
+The data we will analyze comes from a surveillance study of ticks collected in Mongolia. We collected *I. persulcatus* ticks (n = 1300) in May 2020. Viral RNA was extracted from cell cultures, converted to cDNA, and library prepped. We conducted whole-genome shotgun sequencing on the Illumina iSeq100 platform. To read more about this study, see the paper [here](https://www.mdpi.com/2076-0817/13/12/1086).
 
 **Maximum Likelihood**
 
@@ -32,6 +34,18 @@ IQ-TREE offers many parameters for analyzing your data. Let's review some common
 | `-nt AUTO`      | Automatically selects the optimal number of cores to use based on the data.|
 | `-lmap`         | Specifies the number of quartets to be randomly drawn for likelihood mapping analysis. |
 
+**Output Files**
+
+IQ-TREE generates several types of output files. Let's take a look at the main ones:
+
+| Output File Suffix       | Description                                                                 |
+|-----------------|-----------------------------------------------------------------------------|
+| `.treefile`            | The ML tree in NEWICK format.                |
+| `.iqtree`            | The main out report file. Contains computational results.                    |
+| `.log`        | Log file of the entire run. Will specifcy any errors.        |
+| `.model.gz`           | Lists all substitution models tested and their scores. |
+| `.lmap.svg`         | Visualization of likelihood mapping analysis |
+
 **Likelihood Mapping**
 
 IQ-TREE 2 features the abiity to conduct [likehood mapping approach](https://www.pnas.org/doi/full/10.1073/pnas.94.13.6815) (-lmap option). Likelihood mapping quantifies the phylogentic signal in an input alignment by comparing the likelihood of tree topologies for groups of randomly drawn four sequences (quartets). Likelihood maps representated by triangles provide a visual representation of the distribution of resolved and unresolved quartets. A high degree of resolved quartets (found in triangle corners) indicates data sufficently robust for phylogentic inference. Likelihood mapping results are given in the .iqtree report file and the likelhood mapping plots are printed to .lmap.svg. For more information about the applications of likehood mapping, see [paper here](https://publichealth.jmir.org/2020/2/e19170/).
@@ -57,7 +71,7 @@ cd /blue/general_workshop/<your folder>
 ```
 
 ```bash
-mkdir IQ-TREE
+mkdir iqtree
 ```
 
 2. **Let's write a script for running IQ-TREE**
