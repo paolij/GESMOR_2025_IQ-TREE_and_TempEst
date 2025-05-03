@@ -71,7 +71,7 @@ IQ-TREE generates several types of output files. Let's take a look at the main o
 
 1. **Set up your folders in HPG**
 
-Navigate to the workshop folder in the blue server. Go into your personal folder using the cd command. Make a new folder called IQ-TREE
+Navigate to the workshop folder in the blue server. Go into your personal folder using the cd command. Make a new folder called iqtree.
 
 ```bash
 cd /blue/general_workshop/<your folder>
