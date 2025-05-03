@@ -12,7 +12,7 @@ The data we will analyze comes from a surveillance study of ticks collected in M
 
 There are several methods to reconstruct phylogenies from sequence data including distance-based methods (ex Neighbor-Joining), maximum parsimony, and maximum likelihood. 
 
-Briefly, the maximum likelihood (ML) method identifies the tree topology which best explains the observed sequence data given a specified evolutionary model. 
+Briefly, the maximum likelihood (ML) method identifies the tree topology which best explains the observed sequence data given a specified evolutionary model. To read more about the ML approach see this [paper](https://link.springer.com/article/10.1007/BF01734359).
 
 **Model Selection**
 
