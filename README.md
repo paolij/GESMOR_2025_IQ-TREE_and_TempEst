@@ -81,6 +81,16 @@ cd /blue/general_workshop/<your folder>
 mkdir iqtree
 ```
 
+Now we will copy the alignment file we will run IQ-TREE on from the shared folder to your folder. Make sure to change the path below to reflect your folder name.
+Note, prior to running IQ-TREE, we checked for evidence recombination using [RDP5](https://academic.oup.com/ve/article/7/1/veaa087/6020281) and removed recombinant regions. 
+See methods in [TBEV paper](https://www.mdpi.com/2076-0817/13/12/1086) for more info.
+
+```bash
+cp /blue/general_workshop/share/iqtree/TBEV_with_outgroup.fasta /blue/general_workshop/<your_folder>/iqtree
+```
+
+
+
 2. **Let's write a script for running IQ-TREE**
 
 ```bash
