@@ -119,9 +119,6 @@ module load iq-tree/2.2.2.7
 # Input Fasta File
 FASTA=$1
 
-# Extract the base name of the FASTA file without path and extension
-BASE_NAME=$(basename "$FASTA" | sed 's/\..*//')
-
 # Run IQ-TREE
 iqtree -s "${FASTA}" \
     -m MFP \
@@ -132,7 +129,7 @@ iqtree -s "${FASTA}" \
 
 3. **Run your IQ-TREE script**
 ```bash
-sbatch iqtree.sh /blue/general_workshop/share/iqtree/TBEV_with_outgroup.fasta
+sbatch iqtree.sh TBEV_with_outgroup.fasta
 ```
 
 4. **Download your output files**
