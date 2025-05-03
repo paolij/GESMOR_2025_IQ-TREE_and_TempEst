@@ -116,7 +116,7 @@ BASE_NAME=$(basename "$FASTA" | sed 's/\..*//')
 iqtree -s "${FASTA}" \
     -m MFP \
     -bb 1000 \
-    -nt AUTO \
+    -nt 1 \
     -lmap 20000
 ```
 
